@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding: 30px 250px 0px 250px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+main {
+  padding: 30px 250px;
+}
+
+#logoContainer {
+  width: 250px;
+}
+
+#logo {
+  width: 100%;
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: lighter;
+}
+
+#details {
+  display: grid;
+  /* grid-template-columns: 4fr auto; */
+  grid-template-columns: 1fr 4fr;
+
+  align-items: flex-end;
+  font-size: 12px;
+}
+
+#details h2 {
+  font-weight: lighter;
+}
+
+#descriptionContainer {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  margin-top: 30px;
+  height: 366px;
+  border-radius: 30px;
+  background-color: #fbdfdb
+}
+
+#textDescription {
+  padding: 80px 200px 80px 50px;
+  align-items: center;
+  justify-items: center;
+}
+
+#textDescription h2 {
+  padding-top: 50px;
+}
+
+#textDescription p {
+  padding-top: 40px;
+}
+
+#chef {
+  padding-top: 65px;
+}
+
+#mostPopularContainer {
+  padding-top: 50px;
+}
+
+.mostPopular {
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.mostPopularRecipes {
+  max-width: 300px;
+}
+
+.mostPopularRecipes img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.mostPopularRecipes h3 {
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+.mostPopularRecipes p {
+  font-size: 13px;
+  color: #999;
+}
+
+footer {
+  background-color: #eee;
+}
+
+footer p {
+  margin: 0;
+  padding: 23px;
+  text-align: center;
+  color: #999;
+}
