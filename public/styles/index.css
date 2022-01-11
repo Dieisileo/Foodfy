@@ -13,6 +13,7 @@ header {
 
 main {
   padding: 30px 250px;
+  margin-bottom: auto;
 }
 
 #logoContainer {
@@ -31,11 +32,17 @@ main {
   grid-template-columns: 1fr 4fr;
 
   align-items: flex-end;
-  font-size: 12px;
+  
 }
 
-#details h2 {
+#details a {
   font-weight: lighter;
+  text-decoration: none;
+  color: inherit;
+}
+
+#details a:hover {
+  font-weight: bold;
 }
 
 #descriptionContainer {
