@@ -1,6 +1,15 @@
 const express = require("express")
+const nunjucks = require("nunjucks")
 const server = express()
 const routes = require("./routes")
+
+
+server.set("view engine", "njk")
+nunjucks.configure("/views", {
+    express: server,
+    autoescape: false,
+    noCache: true
+})
 
 server.use(express.static("public"))
 
