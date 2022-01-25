@@ -15,10 +15,8 @@ header {
   width: 250px;
 }
 
-#logo {
-  width: 100%;
-  font-family: 'Playfair Display', sans-serif;
-  font-weight: lighter;
+.logo img {
+  height: 100%;
 }
 
 #details {
