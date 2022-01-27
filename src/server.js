@@ -3,6 +3,13 @@ const nunjucks = require("nunjucks")
 const server = express()
 const routes = require("./routes")
 
+server.get("/recipes/:index", function (req, res) {
+    const recipes = []; // Array de receitas carregadas do data.js
+    const recipeIndex = req.params.index;
+  
+    console.log(recipes[recipeIndex]);
+  })
+
 
 server.set("view engine", "njk")
 nunjucks.configure("src/views/", {
