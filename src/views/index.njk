@@ -43,7 +43,7 @@
       <div class="mostPopular">
 
       {% for recipe in recipes %}
-        <div class="mostPopularRecipes">
+        <div id="{{ recipe.id }}" class="mostPopularRecipes">
           <img src="{{ recipe.image }}" alt="">
           <h3>{{ recipe.title }}</h3>
           <p>por {{ recipe.author }}</p>
@@ -57,6 +57,8 @@
   <footer>
     <p>Todos direitos reservados, receitas Foodfy.</p>
   </footer>
+
+  <script src="/scripts/script.js"></script>
 
 </body>
 
