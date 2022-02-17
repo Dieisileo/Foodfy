@@ -2,22 +2,13 @@
   <link rel="stylesheet" href="/styles/recipes.css">
   <link rel="stylesheet" href="/styles/modalRecipes.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  {% include "./parts/styles.njk" %}
 </head>
 
 <body>
   <header>
-    <div id="logoContainer">
-      <a class="logo" href="/">
-        <img src="/images/logo.png" alt="Foodfy">
-      </a>
-    </div>
-    <nav id="details">
-      <a href="/about">Sobre</a>
-      <a href="/recipes">Receitas</a>
-    </nav>
+    {% include "./parts/logo.njk" %}
+    {% include "./parts/links.njk" %}
   </header>
 
   <main>

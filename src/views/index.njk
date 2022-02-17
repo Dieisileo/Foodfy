@@ -10,12 +10,8 @@
 </head>
 <body>
   <header>
-    <div id="logoContainer">
-      <a class="logo" href="/">
-        <img src="/images/logo.png" alt="Foodfy">
-      </a>
-    </div>
-    {% block link %}{% endblock %}
+    {% include "./parts/logo.njk" %}
+    {% include "./parts/links.njk" %}
   </header>
 
   <main>
