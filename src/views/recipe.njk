@@ -15,22 +15,7 @@
   </header>
 
   <main>
-    {% include "./parts/description.njk" %}
-  
-    <div id="mostPopularContainer">
-      <h2>Mais acessadas</h2>
-      <div class="mostPopular">
-
-      {% for recipe in recipes %}
-        <div id="{{ recipe.id }}" class="mostPopularRecipes">
-          <img src="{{ recipe.image }}" alt="">
-          <h3>{{ recipe.title }}</h3>
-          <p>por {{ recipe.author }}</p>
-        </div>
-      {% endfor %}
-      
-      </div>
-    </div>
+ 
   </main>
 
   {% include "./parts/footer.njk" %}
