@@ -15,7 +15,9 @@
   </header>
 
   <main>
- 
+    {% for recipe in recipes %}
+      <img src="{{ recipe.image }}" alt="">
+    {% endfor %}
   </main>
 
   {% include "./parts/footer.njk" %}
