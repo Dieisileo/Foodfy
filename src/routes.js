@@ -11,10 +11,10 @@ routes.get('/recipes', (req, res) => res.render("recipes", {recipes}))
 routes.get('/recipe/:id', (req, res) => {
   const {id} = req.params
 
-  const result = recipes.find(r => r.id === Number(id))
-  console.log(result)
+  const recipe = recipes.find(recipe => recipe.id === Number(id))
   
-  return res.render("recipe")
+  
+  return res.render("recipe", {recipe})
 })
 
 module.exports = routes;
