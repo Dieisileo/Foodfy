@@ -6,7 +6,7 @@
 
   {% include "./parts/styles.njk" %}
 
-  <title>Foodfy</title>
+  <link rel="stylesheet" href="/styles/recipe.css">
 </head>
 <body>
   <header>
@@ -15,9 +15,21 @@
   </header>
 
   <main>
-    <img src="{{ recipe.image }}" alt="">
+    <img class="imgRecipe" src="{{ recipe.image }}" alt="">
     <h2>{{ recipe.title }}</h2>
     <p>por {{ recipe.author }}</p>
+    <h3>Ingredientes</h3>
+    <ul>
+      <li>{{ recipe.ingredients }}</li>
+    </ul>
+
+    <h3>Preparação</h3>
+    <ul>
+      <li>{{ recipe.preparation }}</li>
+    </ul>
+
+    <h3>Informação</h3>
+    <p>{{ recipe.information }}</p>
   </main>
 
   {% include "./parts/footer.njk" %}
