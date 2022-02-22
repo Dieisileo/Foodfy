@@ -15,26 +15,39 @@
   </header>
 
   <main>
-    <img class="imgRecipe" src="{{ recipe.image }}" alt="">
-    <h2>{{ recipe.title }}</h2>
-    <p>por {{ recipe.author }}</p>
-    <h3>Ingredientes</h3>
-    <ul>
+    <div id="iten">
+      <img id="imgRecipe" src="{{ recipe.image }}" alt="">
+      <h2 id="recipeTitle">{{ recipe.title }}</h2>
+      <p>por {{ recipe.author }}</p>
+    </div>
+    
+    <div class="titleAndButton">
+      <h3 class="desciptionTitles">Ingredientes</h3>
+      <button class="showOrRide">Mostrar/Esconder</button>
+    </div>
+    <ul class="descriptionRecipes">
       <li>{{ recipe.ingredients }}</li>
     </ul>
 
-    <h3>Preparação</h3>
-    <ul>
+    <div class="titleAndButton">
+      <h3 class="desciptionTitles">Preparação</h3>
+      <button class="showOrRide">Mostrar/Esconder</button>
+    </div>
+    <ul class="descriptionRecipes">
       <li>{{ recipe.preparation }}</li>
     </ul>
 
-    <h3>Informação</h3>
-    <p>{{ recipe.information }}</p>
+    <div class="titleAndButton">
+      <h3 class="desciptionTitles">Informação</h3>
+      <button class="showOrRide">Mostrar/Esconder</button>
+    </div>
+    <p class="descriptionRecipes">{{ recipe.information }}</p>
   </main>
 
   {% include "./parts/footer.njk" %}
 
   <script src="/scripts/script.js"></script>
+  <script src="/scripts/mostrar.js"></script>
 
 </body>
 

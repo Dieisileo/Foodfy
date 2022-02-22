@@ -1,5 +1,37 @@
-.imgRecipe {
+#iten {
+  text-align: center;
+}
+
+#imgRecipe {
   width: 100%;
   height: 16rem;
   border-radius: 1rem;
+}
+
+#recipeTitle {
+  padding-top: 1rem;
+}
+
+.titleAndButton {
+  padding-top: 1rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.desciptionTitles {
+  padding-right: 0.5rem;
+}
+
+.showOrRide {
+  width: 5rem;
+  height: 0.8rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 0.7rem;
+}
+
+.descriptionRecipes {
+  padding-top: 0.5rem;
+  display: none;
 }
