@@ -13,8 +13,10 @@ routes.get('/recipe/:id', (req, res) => {
 
   const recipe = recipes.find(recipe => recipe.id === Number(id))
   
-  
   return res.render("recipe", {recipe})
 })
+
+routes.get('/admin/recipes', (req, res) => res.render("admRecipes")) // Mostrar lista de receitas
+routes.get('/admin/recipes/create', (req, res) => res.render("create"))
 
 module.exports = routes;

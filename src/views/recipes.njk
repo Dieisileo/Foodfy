@@ -12,9 +12,11 @@
   </header>
 
   <main>
+    <a href="/create">Nova Receita</a>
+    
     <div class="recipes">
       {% for recipe in recipes %}
-        <div class="mostPopularRecipes">
+        <div id="{{ recipe.id }}" class="mostPopularRecipes">
           <img src="{{ recipe.image }}" alt="">
           <h3>{{ recipe.title }}</h3>
           <p>por {{ recipe.author }}</p>
@@ -23,9 +25,7 @@
     </div>
   </main>
 
-  <footer>
-    <p>Todos direitos reservados, receitas Foodfy.</p>
-  </footer>
+  {% include "./parts/footer.njk" %}
 
   <div id="modalRecipe0" class="modalContainer">
     <div class="modal">
@@ -80,5 +80,7 @@
       <p>por Vania Steroski</p>
     </div>
   </div>
+
+  <script src="/scripts/script.js"></script>
 
 </body>
