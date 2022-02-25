@@ -1,32 +1,48 @@
+<head>
+  <link rel="stylesheet" href="/styles/create.css">
+
+  {% include "./parts/styles.njk" %}
+</head>
+
 <body>
   <main>
-    <div>
-      <h1>Criando receita</h1>
-      <button>Salvar receita</button>
-    </div>
-
-    <div>
-      <label for="">Imagem da receita</label>
-      <input type="text" value="" placeholder="https://"/>
-    </div>
-
-    <div>
-      <h3>Nome da Receita</h3>
-      <input type="text" value="" placeholder="Nome da receita"/>
-    </div>
-
-    <div id="recipeAuthor">
-      <h3>Autor da receita</h3>
-      <input type="text" value="" placeholder="Nome do autor"/>
-    </div>
-
-    <div id="ingredients">
-      <div class="ingredient">
-        <h3>Ingredientes</h3>
-        <input type="text" name="ingredients[]" value="" placeholder="Ingredient" />
+    <form id="formCreateRecipe" method="post" action="/admin/recipes">
+      <div class="createRecipe">
+        <h1>Criando receita</h1>
+        <button id="save" form="formCreateRecipe" type="submit">Salvar receita</button>
       </div>
-    </div>
-    <button type="button" class="add-ingredient">Adicionar novo ingrediente</button>
 
+      <div class="inputRecipe">
+        <label>Imagem da receita</label>
+        <input type="text" name="img" value="" placeholder="https://"/>
+      </div>
+
+      <div id="nameRecipe" class="inputRecipe">
+        <label>Nome da Receita</label>
+        <input type="text" name="name" value="" placeholder="Nome da receita"/>
+      </div>
+
+      <div id="recipeAuthor" class="inputRecipe">
+        <label>Autor da receita</label>
+        <input type="text" name="author" value="" placeholder="Nome do autor"/>
+      </div>
+
+      <div id="ingredients" class="inputRecipe">
+        <label>Ingredientes</label>
+        <input type="text" name="ingredients[]" value="" placeholder="Ingrediente" />
+      </div>
+      <button type="button" class="addIten">Novo ingrediente</button>
+
+      <div id="preparation" class="inputRecipe">
+        <label>Modo de preparo</label>
+        <input type="text" name="preparation[]" value="" placeholder="Passo a passo" />
+      </div>
+      <button type="button" class="addIten">Novo passo</button>
+
+      <div class="inputRecipe">
+        <label>Informação</label>
+        <textarea id="textArea" name="information" value="" placeholder="Escreva sua informção"></textarea>
+      </div>
+    </form>
   </main>
 <body>

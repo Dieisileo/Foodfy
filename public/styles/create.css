@@ -1,0 +1,51 @@
+.createRecipe {
+  display: flex;
+  justify-content: space-between;
+}
+
+#save {
+  width: 6rem;
+  border: none;
+  border-radius: 10px;
+  background: rgb(2, 99, 2);
+  color: white;
+  cursor: pointer;
+}
+
+#save:hover {
+  background: rgb(6, 194, 6);
+}
+
+.inputRecipe {
+  padding-top: 3rem;
+  display: grid;
+}
+
+.inputRecipe label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.inputRecipe input {
+  width: 37.5rem;
+  height: 2rem;
+  border: 1px solid #bdbdbd;
+  padding-left: 0.5rem;
+}
+
+.addIten {
+  margin-top: 0.5rem;
+  width: 9rem;
+  height: 2rem;
+  border: none;
+  border-radius: 10px;
+  background: rgb(134, 170, 2);
+  color: rgb(59, 59, 59);
+  cursor: pointer;
+}
+
+#textArea {
+  width: 37.5rem;
+  height: 10rem;
+  padding: 0.5rem;
+}

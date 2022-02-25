@@ -3,6 +3,8 @@ const routes = express.Router()
 
 const recipes = require("../data")
 
+const receitas = require("../data.json")
+
 // const views = __dirname + "/views/"
 
 routes.get('/', (req, res) => res.render("index", {recipes}))
@@ -18,5 +20,10 @@ routes.get('/recipe/:id', (req, res) => {
 
 routes.get('/admin/recipes', (req, res) => res.render("admRecipes")) // Mostrar lista de receitas
 routes.get('/admin/recipes/create', (req, res) => res.render("create"))
+
+routes.post('/admin/recipes', (req, res) => {
+  receitas.push(req.body)
+  return res.redirect('/admin/recipes')
+});
 
 module.exports = routes;
