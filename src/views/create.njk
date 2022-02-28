@@ -29,15 +29,19 @@
 
       <div id="ingredients" class="inputRecipe">
         <label>Ingredientes</label>
-        <input type="text" name="ingredients[]" value="" placeholder="Ingrediente" />
+        <div class="ingredient">
+          <input type="text" name="ingredients[]" value="" placeholder="Ingrediente" />
+        </div>
       </div>
-      <button type="button" class="addIten">Novo ingrediente</button>
+      <button type="button" class="add-ingredient">Novo ingrediente</button>
 
-      <div id="preparation" class="inputRecipe">
+      <div id="preparations" class="inputRecipe">
         <label>Modo de preparo</label>
-        <input type="text" name="preparation[]" value="" placeholder="Passo a passo" />
+        <div class="preparation">
+          <input type="text" name="preparation[]" value="" placeholder="Passo a passo" />
+        </div>
       </div>
-      <button type="button" class="addIten">Novo passo</button>
+      <button type="button" class="add-novo-passo">Novo passo</button>
 
       <div class="inputRecipe">
         <label>Informação</label>
@@ -45,4 +49,7 @@
       </div>
     </form>
   </main>
+
+  <script src="/scripts/addIngredient.js"></script>
+  <script src="/scripts/addPreparation.js"></script>
 <body>
